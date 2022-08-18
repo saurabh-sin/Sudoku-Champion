@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sudoku Champ</title>
+		<link rel="stylesheet" href="./app.css">
+	</head>	
+	<body>
+		<h1>Sudoko Champ</h1>
+		<button id="diff1" class="insud" style="margin-top: -49.6px; margin-left: -8px; margin-right: -11px; ">Difficulty</button><br>
+		<div id="mymodal" class="modal">
+			<div class="modal_content" id="rul0">
+				<span class="close">&times;</span>
+				<p style="font-size: 15px; padding-top: 10px;">
+					Sudoku is played on a grid of 9 x 9 spaces. Within the rows and 
+					columns are 9 “squares” (made up of 3 x 3 spaces). Each row, column 
+					and square (9 spaces each) needs to be filled out with the 
+					numbers 1-9, without repeating any numbers within the row, column 
+					or square.
+				</p>
+				<img src="sud1.png" style="padding-left: 300px; height: 215px; width: 150px;"><br>
+				<button id="next1" class="next">Next</button>
+			</div>
+			<div class="modal_content" id="rul1" style="display: none;">
+				<span class="close">&times;</span>
+				<p>Sudoku is played on a grid of 9 x 9 spaces. Within the rows and 
+					columns are 9 “squares” (made up of 3 x 3 spaces). Each row, column 
+					and square (9 spaces each) needs to be filled out with the 
+					numbers 1-9, without repeating any numbers within the row, column 
+					or square.</p>
+					<img src="sud2.png" style="padding-top: 25px; padding-left: 175px; height: 200px; width: 200px;">
+					<img src="sud3.png" style="height: 200px; width: 200px; float: inline-start;">
+					<br>
+					<button id="next2" class="next">Next</button>
+					<button id="prev1" class="next" style="margin-right: 10px;">Previous</button>
+			</div>
+			<div id="rul2" class="modal_content" style="display: none;">
+				<h2 style="text-align: center;"> Set Toughness of Sudoku </h3><br>
+				<input type="range" min="1" max="4" value="1" class="slider" id="toughness" step="1" width="100%"><br><br><br><br><br>
+				<button class="next" id="gen_sud">Start Sudoko</button>
+				<button id="prev2" class="next" style="margin-right: 10px;">Previous</button>
+			</div>
+			<div id="rul3" class="modal_content" style="display: none;">
+				<span class="close">&times;</span>
+				<h2 style="text-align: center;">Congratulations!</h2>
+				<img src="success.png" style="padding-top: 25px; padding-left: 280px; height: 200px; width: 200px;"><br>
+				<button id="prev3" class="next">Play Again</button>
+			</div>
+		</div>
+		<!--<div class="slidecontainer">
+			<input type="range" min="1" max="4" value="1" class="slider" id="toughness" step="1">
+		</div>
+
+		<button class="insud" id="gen_sud" onclick="make_sud()">Generate Sudoko</button>
+		<br><br>-->
+		<script src="./app.js"></script>
+	</body>
+
+</html>

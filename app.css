@@ -1,0 +1,137 @@
+body{
+    background-color: whitesmoke;
+}
+h1{
+    background-color:rgba(222, 237, 243, 0.575);
+    margin-top: -7.7px;
+    margin-left: -7.7px;
+    margin-right: -7.7px;
+    border: 2px solid rgb(147, 215, 255);
+    font-family: serif;
+    text-align: center;
+    font-size: 70px;
+}
+table {
+    margin-left: 300px;
+    border-collapse: collapse;
+    background-color:rgba(222, 237, 243, 0.575);
+    font-size: medium;
+}
+td {
+    height:50px;
+    width:50px;
+    border:1px solid;
+    text-align:center;
+    font-size: x-large;
+    font-weight: 1000;
+    font-family: serif;
+}
+td:first-child {
+    border-left: 3px solid;
+}
+td:nth-child(3n) {
+    border-right: 3px solid ;
+}
+tr:first-child td {
+    border-top: 3px solid;
+}
+tr:nth-child(3n) td {
+    border-bottom: 3px solid ;
+}
+but_group{
+    width:fit-content;
+}
+input{ 
+    width: 50px;
+    height: 50px;
+      border: 0px solid green;
+      padding: 0px;
+      margin: 0px;
+    text-align:center;
+    font-family: serif;
+    font-size: x-large;
+    font-weight: 500;
+    background-color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none ;
+    margin: 0;
+}
+.insud{
+    width: 200px;
+    height: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: rgba(222, 237, 243, 0.575);
+    border: 3px solid;
+    border-radius: 10px;
+    margin: 60px 20px 60px 50px;
+    /*margin-left: 50px;
+    margin-right: 0px;*/
+    border-color: rgb(147, 215, 255);
+}
+#mytable{
+    margin-bottom: 25px;
+}
+.modal{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px ;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto;
+    background-color: rgba(0,0, 0,0.3);
+}
+.modal_content{
+    background-color: rgb(250, 249, 249);
+    font-family: cursive;
+    margin: auto;
+      padding: 30px;
+     border: 2px solid rgb(39, 27, 27);
+    height: 55%;
+    width: 50%;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.next{
+    height: 40px;
+    width: fit-content;
+    float: right;
+    background-color: rgb(105, 230, 167);
+    border: 1px solid black;
+    border-radius: 100px;
+    font-size: 20px;
+}
+#toughness{
+    height: 36px;
+    width: 50%;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -14px; 
+    margin-left:200px;
+}
+#mytable,.insud,#tim1{
+    float: left;
+}
+#tim1{
+    background-color: whitesmoke;
+    font-size: 50px;
+    font-family: cursive;
+    margin-left: 150px;
+}
